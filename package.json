@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "dependencies": {
+        "@vitejs/plugin-vue": "^2.3.3",
+        "axios": "^0.27.2",
+        "lodash": "^4.17.21",
+        "vue": "^3.2.36",
+        "vue-router": "4",
+        "vuex": "^4.0.2",
+        "vuex-map-fields": "^1.4.1"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.7",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.1.4",
+        "vite": "^2.9.12",
+        "vite-plugin-laravel": "^0.2.0-beta.21"
+    }
+}
