@@ -35,7 +35,16 @@ export const loadSubscriber = ({commit, dispatch, state}, id) => {
 
 export const storeSubscriber = ({commit, dispatch, state}, params) => {
 	return new Promise((resolve, reject) => {
-		axios.post(`/api/v1/subscriber`, params).then((response) => {
+        const { id } = params;
+        let request = 'post';
+        let uri = '/api/v1/subscriber'
+
+        if (id) {
+            request = 'put';
+            uri = `/api/v1/subscriber/${id}`
+        }
+
+		axios[request]( uri, params).then((response) => {
 			commit(types.SUBSCRIBER, response.data)
 			resolve(response)
 		}).catch((err) => {
