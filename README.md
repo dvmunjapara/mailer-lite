@@ -1,6 +1,6 @@
 * [Requirements](#step1)
 * [Installation](#step2)
-* [Run](#step3)
+* [Test](#step3)
 * [Run](#step4)
 
 <a name="step1"></a>
